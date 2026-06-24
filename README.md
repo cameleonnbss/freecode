@@ -52,6 +52,20 @@ Then symlink `bin/freecode.js` to `/usr/local/bin/freecode` (or `%USERPROFILE%\f
 - **Node.js ≥ 18** (Node 20 LTS recommended). Get it from <https://nodejs.org>.
 - An internet connection (for cloud providers) — or a local Ollama / LM Studio server for fully offline use.
 
+
+## open
+
+-enter freecode in a powershell
+
+if nothing 
+
+open a new powerhsell and type 
+
+```bash
+[Environment]::SetEnvironmentVariable("Path", "$env:Path;$env:USERPROFILE", "User")
+```
+
+
 ---
 
 ## Quick start
