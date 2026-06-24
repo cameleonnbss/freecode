@@ -1,0 +1,64 @@
+{
+  "name": "freecode",
+  "version": "0.1.0",
+  "description": "FreeCode — Terminal AI coding assistant, free & open source. Multi-provider (Unlimited AI, OpenAI, Anthropic, Gemini, Ollama, LM Studio, NVIDIA, custom), bilingual FR/EN, with a neon animated UI.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "freecode": "bin/freecode.js"
+  },
+  "files": [
+    "bin/",
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "install.sh",
+    "install.bat"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "bundle": "node scripts/bundle.js",
+    "dev": "tsx src/index.ts",
+    "start": "node bin/freecode.js",
+    "smoke": "node bin/freecode.js --version && node bin/freecode.js --help",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "cli",
+    "ai",
+    "coding-assistant",
+    "claude-code",
+    "gemini-cli",
+    "qwen-code",
+    "terminal",
+    "free",
+    "open-source",
+    "ollama",
+    "lm-studio",
+    "anthropic",
+    "openai",
+    "unlimited-ai"
+  ],
+  "author": "cameleonnbss (https://github.com/cameleonnbss)",
+  "license": "MIT",
+  "homepage": "https://github.com/cameleonnbss/freecode",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameleonnbss/freecode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cameleonnbss/freecode/issues"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "gradient-string": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  }
+}
