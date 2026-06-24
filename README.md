@@ -89,6 +89,13 @@ freecode history
 
 Inside the chat, type `/help` to see all slash commands.
 
+
+to configuere the unlimited ai api key:
+
+```bash
+notepad $env:USERPROFILE\.freecode\config.json
+```
+
 ---
 
 ## Providers
