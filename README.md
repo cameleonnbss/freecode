@@ -3,11 +3,14 @@
 <div align="center">
 
 ```
-  ███████ ███████ ██      ███████  ██████   ██████ ██   ██ ███████ ██████
-  ██      ██      ██      ██      ██    ██ ██      ██  ██  ██      ██   ██
-  █████   █████   ██      █████   ██    ██ ██      █████   █████   ██████
-  ██      ██      ██      ██      ██    ██ ██      ██  ██  ██      ██   ██
-  ██      ███████ ███████ ███████  ██████   ██████ ██   ██ ███████ ██   ██
+ ███████████                                                      █████         
+▒▒███▒▒▒▒▒▒█                                                     ▒▒███          
+ ▒███   █ ▒  ████████   ██████   ██████      ██████   ██████   ███████   ██████ 
+ ▒███████   ▒▒███▒▒███ ███▒▒███ ███▒▒███    ███▒▒███ ███▒▒███ ███▒▒███  ███▒▒███
+ ▒███▒▒▒█    ▒███ ▒▒▒ ▒███████ ▒███████    ▒███ ▒▒▒ ▒███ ▒███▒███ ▒███ ▒███████ 
+ ▒███  ▒     ▒███     ▒███▒▒▒  ▒███▒▒▒     ▒███  ███▒███ ▒███▒███ ▒███ ▒███▒▒▒  
+ █████       █████    ▒▒██████ ▒▒██████    ▒▒██████ ▒▒██████ ▒▒████████▒▒██████ 
+▒▒▒▒▒       ▒▒▒▒▒      ▒▒▒▒▒▒   ▒▒▒▒▒▒      ▒▒▒▒▒▒   ▒▒▒▒▒▒   ▒▒▒▒▒▒▒▒  ▒▒▒▒▒▒                                                                                 
 ```
 
 **Free terminal AI coding assistant — like Claude Code / Gemini CLI / Qwen Code, but free & open source.**
@@ -34,31 +37,6 @@ Claude Code, Gemini CLI and Qwen Code are great — but they lock you into one p
 
 ## Install
 
-### Option A — One-shot script (recommended for beginners)
-
-**macOS / Linux / WSL:**
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/cameleonnbss/freecode/main/install.sh | bash
-```
-
-**Windows (cmd or PowerShell):**
-
-```cmd
-curl -fsSL https://raw.githubusercontent.com/cameleonnbss/freecode/main/install.bat -o install.bat && install.bat
-```
-
-The script checks Node.js, clones the repo, runs `npm install` + `npm run build`, and links `freecode` onto your PATH. Open a new terminal and run `freecode`.
-
-### Option B — npm global install
-
-```bash
-npm install -g freecode
-freecode
-```
-
-### Option C — git clone (manual)
-
 ```bash
 git clone https://github.com/cameleonnbss/freecode.git
 cd freecode
@@ -69,11 +47,7 @@ node bin/freecode.js
 
 Then symlink `bin/freecode.js` to `/usr/local/bin/freecode` (or `%USERPROFILE%\freecode.cmd` on Windows) if you want `freecode` available everywhere.
 
-### Option D — npx (no install)
 
-```bash
-npx freecode
-```
 
 ### Requirements
 
